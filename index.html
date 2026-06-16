@@ -1,7 +1,144 @@
-<a href="#dashboard">🏠 Dashboard</a>
-<a href="#services">🛡️ Security Services</a>
-<a href="#reports">📊 Reports</a>
-<a href="#payments">💳 Payments</a>
-<a href="#support">📞 Support</a>
-<a href="#settings">⚙️ Settings</a>
-<a href="#twofa">🔐 2-Factor Authentication Assistance</a>
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karan Ethical Hub</title><style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+
+body{
+background:#0b1220;
+color:#fff;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+background:#111827;
+}
+
+.search{
+padding:10px;
+border:none;
+border-radius:10px;
+width:40%;
+}
+
+.container{
+display:flex;
+}
+
+.sidebar{
+width:220px;
+background:#111827;
+min-height:100vh;
+padding:15px;
+}
+
+.sidebar a{
+display:block;
+padding:12px;
+margin:10px 0;
+background:#1f2937;
+border-radius:10px;
+text-decoration:none;
+color:white;
+}
+
+.main{
+flex:1;
+padding:20px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.card{
+background:#1f2937;
+padding:20px;
+border-radius:15px;
+}
+
+.paybtn{
+display:inline-block;
+background:#2563eb;
+color:white;
+padding:14px 25px;
+border-radius:10px;
+text-decoration:none;
+margin-top:10px;
+}
+
+.profile{
+width:40px;
+height:40px;
+border-radius:50%;
+}
+
+.footer{
+background:#111827;
+padding:20px;
+text-align:center;
+margin-top:20px;
+}
+
+@media(max-width:768px){
+.container{flex-direction:column}
+.sidebar{width:100%;min-height:auto}
+.search{width:100%}
+}
+</style></head><body><div class="header">
+<input class="search" placeholder="Search..."><div>
+🔔
+<span id="clock"></span>
+<img class="profile"
+src="https://i.imgur.com/6VBx3io.png">
+</div>
+</div><div class="container"><div class="sidebar">
+<a href="#">🏠 Dashboard</a>
+<a href="#">🛡️ Security Services</a>
+<a href="#">📊 Reports</a>
+<a href="#">💳 Payments</a>
+<a href="#">📞 Support</a>
+<a href="#">⚙️ Settings</a>
+</div><div class="main"><h2>Karan Ethical Hub</h2><br><div class="cards"><div class="card">
+<h3>👥 Active Users</h3>
+<p>24 Online</p>
+</div><div class="card">
+<h3>📋 Service Requests</h3>
+<p>12 Pending</p>
+</div><div class="card">
+<h3>🛡️ Security Status</h3>
+<p>Protected</p>
+</div><div class="card">
+<h3>💻 System Health</h3>
+<p>98%</p>
+</div></div><br><div class="card">
+<h3>Quick Access</h3>
+<p>Security Audit</p>
+<p>Password Review</p>
+<p>Website Security Review</p>
+<p>Support Center</p>
+</div><br><div class="card">
+<h3>Payment Section</h3><a class="paybtn"
+href="https://karandhaker4.github.io/payment-qr/"
+target="_blank">
+Pay Now
+</a>
+
+</div></div>
+</div><div class="footer">
+Karan Ethical Hub © 2026
+</div><script>
+function updateClock(){
+document.getElementById("clock").innerHTML =
+new Date().toLocaleTimeString();
+}
+setInterval(updateClock,1000);
+updateClock();
+</script></body>
+</html>
