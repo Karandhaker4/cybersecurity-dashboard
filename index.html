@@ -1,241 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cybersecurity-Themed Dashboard</title>
+<title>Karan Ethical Hub</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
 body{
-background:#07111f;
+margin:0;
+background:linear-gradient(135deg,#0f172a,#1e1b4b,#312e81);
+font-family:Arial,sans-serif;
 color:white;
-display:flex;
-min-height:100vh;
 }
 
-.sidebar{
-width:250px;
-background:#0b1728;
+.header{
 padding:20px;
-border-right:1px solid #1b2c45;
-}
-
-.logo{
-font-size:24px;
+text-align:center;
+font-size:28px;
 font-weight:bold;
-margin-bottom:30px;
-color:#7c4dff;
-}
-
-.menu a{
-display:block;
-padding:12px;
-margin:8px 0;
-background:#101f35;
-border-radius:10px;
-text-decoration:none;
-color:white;
-transition:.3s;
-}
-
-.menu a:hover{
-background:#1d3b63;
-}
-
-.main{
-flex:1;
-padding:20px;
-}
-
-.topbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-margin-bottom:20px;
-}
-
-.search{
-padding:10px;
-width:250px;
-border:none;
-border-radius:8px;
-background:#101f35;
-color:white;
-}
-
-.clock{
-background:#101f35;
-padding:10px 15px;
-border-radius:10px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:15px;
-margin-bottom:20px;
+background:#111827;
+box-shadow:0 0 20px cyan;
 }
 
 .card{
-background:#101f35;
+margin:20px;
 padding:20px;
 border-radius:15px;
-box-shadow:0 0 15px rgba(0,255,255,.15);
+background:#1f2937;
+box-shadow:0 0 15px #00ffff;
 }
 
-.card h3{
-margin-bottom:10px;
-}
-
-.progress{
-height:10px;
-background:#23324f;
+.btn{
+background:#2563eb;
+color:white;
+padding:12px 20px;
+border:none;
 border-radius:10px;
-overflow:hidden;
-margin-top:10px;
-}
-
-.bar{
-height:100%;
-background:#00e5ff;
-}
-
-.section{
-background:#101f35;
-padding:20px;
-border-radius:15px;
-margin-bottom:20px;
-}
-
-.quick{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:10px;
-}
-
-.quick div{
-background:#152847;
-padding:15px;
-border-radius:10px;
-text-align:center;
+font-size:16px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="sidebar">
-<div class="logo">Cybersecurity-Themed</div>
-
-<div class="menu">
-<a href="#">Dashboard</a>
-<a href="#">Detailed Recording</a>
-<a href="#">Access Every Chat</a>
-<a href="#">All Apps</a>
-<a href="#">File Manager</a>
-<a href="#">System Overview</a>
-<a href="#">User Management</a>
-<a href="#">Logs & Activities</a>
-<a href="#">Security Center</a>
-<a href="#">Backup & Restore</a>
-<a href="#">Settings</a>
-</div>
-</div>
-
-<div class="main">
-
-<div class="topbar">
-<input class="search" placeholder="Search anything...">
-<div class="clock" id="clock">Loading...</div>
-</div>
-
-<div class="cards">
-
-<div class="card">
-<h3>Active Users</h3>
-<h1>24</h1>
+<div class="header">
+Karan Ethical Hub
 </div>
 
 <div class="card">
-<h3>Sessions</h3>
-<h1>13</h1>
+<h2>Cybersecurity Dashboard</h2>
+<p>Dashboard Successfully Running</p>
+<button class="btn">Pay Now</button>
 </div>
-
-<div class="card">
-<h3>Total Recordings</h3>
-<h1>1248</h1>
-</div>
-
-<div class="card">
-<h3>Security Status</h3>
-<h1>Protected</h1>
-</div>
-
-</div>
-
-<div class="section">
-<h2>System Overview</h2>
-
-<p>CPU Usage 45%</p>
-<div class="progress"><div class="bar" style="width:45%"></div></div>
-
-<br>
-
-<p>RAM Usage 68%</p>
-<div class="progress"><div class="bar" style="width:68%"></div></div>
-
-<br>
-
-<p>Disk Usage 55%</p>
-<div class="progress"><div class="bar" style="width:55%"></div></div>
-
-</div>
-
-<div class="section">
-<h2>Recent Activities</h2>
-<br>
-<p>Meeting with Team</p>
-<p>Support Call</p>
-<p>Project Discussion</p>
-<p>Client Presentation</p>
-<p>Daily Standup</p>
-</div>
-
-<div class="section">
-<h2>Quick Access</h2>
-<br>
-
-<div class="quick">
-<div>Detailed Recording</div>
-<div>Access Every Chat</div>
-<div>All Apps</div>
-<div>File Manager</div>
-<div>Security Center</div>
-<div>Backup & Restore</div>
-</div><a href="https://karandhaker4.github.io/payment-qr/" target="_blank">
-<button>Pay Now</button>
-</a>
-
-</div>
-
-</div>
-
-<script>
-function updateClock(){
-const now=new Date();
-document.getElementById("clock").innerHTML=
-now.toLocaleString("en-IN",{timeZone:"Asia/Kolkata"});
-}
-setInterval(updateClock,1000);
-updateClock();
-</script>
 
 </body>
 </html>
